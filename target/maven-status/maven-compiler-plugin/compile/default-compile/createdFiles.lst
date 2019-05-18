@@ -1,3 +1,4 @@
 pl/sda/servlets/FormServlet.class
 pl/sda/servlets/HttpServlet.class
+pl/sda/servlets/CookieServlet.class
 pl/sda/servlets/RawServlet.class
