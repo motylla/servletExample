@@ -4,15 +4,8 @@
     <list default="true" id="3fc144d3-87ee-4d67-af35-334c143cd2d3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/sda/servlets/CookieServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/sda/servlets/CookieServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/sda/servlets/FormServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/sda/servlets/HttpServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/sda/servlets/RawServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/conf/logging.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/conf/tomcat-users.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/conf/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/logs/access_log.2019-05-18" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/sda/servlets/CookieServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/sda/servlets/CookieServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/logs/access_log.2019-05-18" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/logs/access_log.2019-05-18" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -88,8 +81,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/pl/sda/servlets/CookieServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="23" column="48" selection-start-line="23" selection-start-column="48" selection-end-line="23" selection-end-column="48" />
+            <state relative-caret-position="527">
+              <caret line="31" column="34" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -261,12 +254,12 @@
       <updated>1558165071838</updated>
       <workItem from="1558165078091" duration="238000" />
       <workItem from="1558165340262" duration="1806000" />
-      <workItem from="1558167274709" duration="7262000" />
+      <workItem from="1558167274709" duration="8623000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9306000" />
+    <option name="totallyTimeSpent" value="10667000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="947" extended-state="6" />
@@ -406,8 +399,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/sda/servlets/CookieServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="23" column="48" selection-start-line="23" selection-start-column="48" selection-end-line="23" selection-end-column="48" />
+        <state relative-caret-position="527">
+          <caret line="31" column="34" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

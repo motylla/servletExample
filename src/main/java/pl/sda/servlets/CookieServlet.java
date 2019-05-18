@@ -8,6 +8,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.Optional;
 
 @WebServlet(name="CookieServlet", urlPatterns = "/cookie")
 public class CookieServlet extends HttpServlet {
@@ -17,12 +18,18 @@ public class CookieServlet extends HttpServlet {
         resp.setCharacterEncoding("UTF-8");
         resp.setStatus(HttpServletResponse.SC_OK);
         PrintWriter out = resp.getWriter();
+
+        //Próba pobrania ciastka 'color'
+        getCookie(req, "color").ifPresent(c -> {
+            out.println("<body bgcolor=" + c.getValue() + "> </body>");
+        });
+
         out.println("<form action = '/cookie' method = 'post' >");
         out.println("<select name = 'color'> ");
-        out.println("<option>Blue</option>");
-        out.println("<option>Pink</option>");
-        out.println("<option>Green</option>");
-        out.println("<option>Black</option>");
+        out.println("<option>blue</option>");
+        out.println("<option>pink</option>");
+        out.println("<option>green</option>");
+        out.println("<option>black</option>");
         out.println("</select>");
         out.println("<input type='submit' value='zapisz'>");
         out.println("</form>");
@@ -33,5 +40,14 @@ public class CookieServlet extends HttpServlet {
         String color = req.getParameter("color");
         resp.addCookie(new Cookie("color", color));
         resp.getWriter().println("Ciasteczko zapisane");
+    }
+
+    private Optional<Cookie> getCookie(HttpServletRequest req, String cookieName) {
+        for (Cookie c: req.getCookies()) {
+            if (c.getName().equals(cookieName)) {
+                return Optional.ofNullable(c);
+            }
+        }
+        return Optional.empty();
     }
 }
