@@ -10,7 +10,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.Optional;
 
-@WebServlet(name="CookieServlet", urlPatterns = "/cookie")
+@WebServlet(name = "CookieServlet", urlPatterns = "/cookie")
 public class CookieServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -43,7 +43,10 @@ public class CookieServlet extends HttpServlet {
     }
 
     private Optional<Cookie> getCookie(HttpServletRequest req, String cookieName) {
-        for (Cookie c: req.getCookies()) {
+        if (req.getCookies() == null) {
+            return Optional.empty();
+        }
+        for (Cookie c : req.getCookies()) {
             if (c.getName().equals(cookieName)) {
                 return Optional.ofNullable(c);
             }
